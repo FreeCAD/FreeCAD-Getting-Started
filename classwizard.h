@@ -1,8 +1,3 @@
-
-** $QT_END_LICENSE$
-**
-****************************************************************************/
-
 #ifndef CLASSWIZARD_H
 #define CLASSWIZARD_H
 

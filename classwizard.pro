@@ -10,7 +10,4 @@ INSTALLS += target
 QT += widgets
 simulator: warning(This example might not fully work on Simulator platform)
 
-DISTFILES += \
-    images/logo1.png \
-    images/watermark1.png \
-    images/watermark2.png
+DISTFILES +=

@@ -1,6 +1,3 @@
-** $QT_END_LICENSE$
-**
-****************************************************************************/
 #include <QtWidgets>
 
 #include "classwizard.h"
@@ -12,14 +9,13 @@ ClassWizard::ClassWizard(QWidget *parent)
     addPage(new IntroPage);
     addPage(new LookAndFeelPage);
     addPage(new WorkbenchesPage);
-//    addPage(new OutputFilesPage);
     addPage(new ConclusionPage);
 //! [0]
 
-    setPixmap(QWizard::BannerPixmap, QPixmap(":/images/banner.png"));
-    setPixmap(QWizard::BackgroundPixmap, QPixmap(":/images/background.png"));
+    setPixmap(QWizard::BannerPixmap, QPixmap(":/images/banner_big.png"));
+    setPixmap(QWizard::BackgroundPixmap, QPixmap(""));
 
-    setWindowTitle(tr("Freecad Wizard"));
+    setWindowTitle(tr("Freecad Getting started"));
 //! [2]
 }
 //! [1] //! [2]
@@ -166,8 +162,8 @@ ClassWizard::ClassWizard(QWidget *parent)
 IntroPage::IntroPage(QWidget *parent)
     : QWizardPage(parent)
 {
-    setPixmap(QWizard::LogoPixmap, QPixmap(" "));
-    setPixmap(QWizard::BannerPixmap, QPixmap(":/images/watermark1.png"));
+    setPixmap(QWizard::LogoPixmap, QPixmap(""));
+    setPixmap(QWizard::BannerPixmap, QPixmap(":/images/banner_big.png"));
     setTitle(tr(" "));
     setSubTitle(tr(" "));
     label = new QLabel(tr("Press next to start your configuration process!"));
